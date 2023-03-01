@@ -11,10 +11,11 @@ export default function Wrapper({ children }: { children: React.ReactNode }) {
         main: "#FF963C",
         dark: "#EA6C00",
         light: "#FFCC21",
-        contrastText: "#000"
+        contrastText: "#fff"
       },
       secondary: {
-        main: "#8FE9D0"
+        main: "#fff",
+        contrastText: "#FF963C",
       }
     }
   });

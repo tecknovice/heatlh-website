@@ -1,10 +1,10 @@
 import { Box, Button, CircularProgress } from '@mui/material'
 import { url } from 'inspector'
 import { Container } from '../lib/styles/Container'
-import ChoiceItem from './ChoiceItem'
-import CircleChart from './CircleChart'
-import { LineChart } from './LineChart'
-import Photo from './Photo'
+import ChoiceItem from './common/ChoiceItem'
+import CircleChart from './common/CircleChart'
+import { LineChart } from './common/LineChart'
+import Photo from './common/Photo'
 
 const MenuList = [
   {
@@ -59,6 +59,24 @@ const PhotoList = [
     label: '05.21.Snack',
   },
 ]
+
+const ChartData = {
+    label: ['6月', '7月', '8月', '9月', '10月', '11月', '12月', '1月', '2月', '3月', '4月', '5月'],
+    userData: [
+        {
+          label: 'Dataset 1',
+          data: [86, 114, 106, 106, 107, 111, 133, 221, 783, 2478, 107, 111],
+          borderColor: 'rgba(255, 204, 33, 1)',
+          backgroundColor: 'rgba(255, 204, 33, 1)',
+        },
+        {
+          label: 'Dataset 2',
+          data: [86, 114, 282, 350, 411, 502, 635, 809, 947, 1402, 3700, 5267],
+          borderColor: 'rgba(143, 233, 208, 1)',
+          backgroundColor: 'rgba(143, 233, 208, 1)',
+        },
+      ],
+}
 const Dashboard = () => {
   return (
     <>
@@ -77,7 +95,7 @@ const Dashboard = () => {
             alignItems="center"
             justifyContent="center"
             sx={{
-              backgroundImage: 'url("/images/d01.jpg")',
+              background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/images/d01.jpg")',
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'contain',
               backgroundPosition: 'center',
@@ -88,7 +106,7 @@ const Dashboard = () => {
           </Box>
         </Box>
         <Box display="flex" height="316px" width="60%" justifyContent={'center'} py={2} sx={{ bgcolor: '#2E2E2E' }}>
-          <LineChart />
+          <LineChart {...ChartData}/>
         </Box>
       </Box>
       <Container sx={{ position: 'relative', display: 'flex', justifyContent: 'center', gap: '84px', py: '25px' }}>

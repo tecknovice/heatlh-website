@@ -8,7 +8,7 @@ import Menu from '@mui/material/Menu'
 import Button from '@mui/material/Button'
 import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
-import { Container } from "../lib/styles/Container"
+import { Container } from "../../lib/styles/Container"
 
 const pages = [
   { icon: <img src="/svg/icon_note.svg" alt="" />, text: '自分の記録' },
