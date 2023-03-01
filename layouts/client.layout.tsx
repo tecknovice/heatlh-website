@@ -21,7 +21,7 @@ export default function ClientLayout({ children }: { children?: React.ReactNode 
         <Footer title="Footer" description="Something here to give the footer a purpose!" />
         <IconButton
         onClick={() => {
-          ref?.current?.scrollIntoView({ behavior: 'smooth' })
+          (ref?.current as any)?.scrollIntoView({ behavior: 'smooth' })
         }}
         sx={{ position: 'fixed',  bottom: "10px", right: "10px"}}
       >

@@ -97,8 +97,8 @@ const Column = () => {
         }}
       >
         {PhotoList.map((m, index) => (
-          <Box width={'24.5%'} mb={'10px'}>
-            <Photo key={index} image={m.image} label={m.label} width={'100%'} height={'144px'} />
+          <Box width={'24.5%'} mb={'10px'} key={index}>
+            <Photo  image={m.image} label={m.label} width={'100%'} height={'144px'} />
             <Typography color="common.black" fontSize="15px" fontWeight="300" mt={'5px'}>
               魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…
             </Typography>
