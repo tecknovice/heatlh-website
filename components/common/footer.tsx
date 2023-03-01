@@ -25,7 +25,7 @@ export default function Footer(props: FooterProps) {
         {pages.map((page, index) => (
           <Button
             key={index}
-            onClick={() => {}}
+            disableRipple
             sx={{
               my: 2,
               mr: '45px',

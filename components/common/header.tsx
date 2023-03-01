@@ -8,7 +8,7 @@ import Menu from '@mui/material/Menu'
 import Button from '@mui/material/Button'
 import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
-import { Container } from "../../lib/styles/Container"
+import { Container } from '../../lib/styles/Container'
 
 const pages = [
   { icon: <img src="/svg/icon_note.svg" alt="" />, text: '自分の記録' },
@@ -47,6 +47,7 @@ function Header() {
             {pages.map((page, index) => (
               <Button
                 key={index}
+                disableRipple
                 onClick={handleCloseNavMenu}
                 startIcon={page.icon}
                 sx={{ my: 2, color: 'white', '&:hover': { color: 'primary.main' } }}
@@ -71,6 +72,11 @@ function Header() {
             <Menu
               sx={{
                 mt: '35px',
+                borderRadius: 0,
+                '& .MuiList-root.MuiMenu-list': {
+                  paddingTop: 0,
+                  paddingBottom: 0,
+                },
               }}
               id="menu-appbar"
               anchorEl={anchorElUser}
@@ -87,7 +93,20 @@ function Header() {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                <MenuItem
+                  key={setting}
+                  onClick={handleCloseUserMenu}
+                  sx={{
+                    width: '280px',
+                    bgcolor: '#777777',
+                    py: '23px',
+                    px: '32px',
+                    color: 'common.white',
+                    borderBottom: '0.5px solid #5e5e5e',
+                    borderTop: '0.5px solid  #a2a2a2',
+                    '&:hover': { bgcolor: '#414141' },
+                  }}
+                >
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
