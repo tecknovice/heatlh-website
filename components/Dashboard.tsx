@@ -65,8 +65,7 @@ const Dashboard = () => {
       <Box display="flex">
         <Box
           height="316px"
-          maxWidth="540px"
-          width="30%"
+          width="40%"
           sx={{
             overflow: 'hidden',
           }}
@@ -88,7 +87,7 @@ const Dashboard = () => {
             <CircleChart percentage={75} />
           </Box>
         </Box>
-        <Box display="flex" height="316px" width="70%" justifyContent={'center'} py={2} sx={{ bgcolor: '#2E2E2E' }}>
+        <Box display="flex" height="316px" width="60%" justifyContent={'center'} py={2} sx={{ bgcolor: '#2E2E2E' }}>
           <LineChart />
         </Box>
       </Box>
