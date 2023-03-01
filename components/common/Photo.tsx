@@ -1,10 +1,10 @@
 import { Box, Typography } from '@mui/material'
 
-const Photo = ({image, label}: {image: string, label: string}) => {
+const Photo = ({image, label, width = "243px", height = "243px"}: {image: string, label: string,width?: string, height?: string}) => {
   return (
     <Box
-      height="243px"
-      width="243px"
+      height={height}
+      width={width}
       sx={{
         overflow: 'hidden',
         position: "relative"
