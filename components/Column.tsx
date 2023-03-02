@@ -62,7 +62,7 @@ const Column = () => {
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
-      
+
           py: '56px',
         }}
       >
@@ -82,7 +82,7 @@ const Column = () => {
             </Typography>
             <Divider sx={{ width: '56px', bgcolor: 'common.white', my: '10px' }} />
             <Typography color="common.white" fontSize="18px" fontWeight="300" mt={'5px'}>
-             {data.sublabel}
+              {data.sublabel}
             </Typography>
           </Box>
         ))}
@@ -91,14 +91,14 @@ const Column = () => {
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
-          
+
           flexWrap: 'wrap',
           mb: '25px',
         }}
       >
         {PhotoList.map((m, index) => (
           <Box width={'24.5%'} mb={'10px'} key={index}>
-            <Photo  image={m.image} label={m.label} width={'100%'} height={'144px'} />
+            <Photo image={m.image} label={m.label} width={'100%'} height={'144px'} />
             <Typography color="common.black" fontSize="15px" fontWeight="300" mt={'5px'}>
               魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…
             </Typography>

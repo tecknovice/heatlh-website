@@ -1,10 +1,9 @@
 import type { ReactElement } from 'react'
-import Typography from '@mui/material/Typography'
 import ClientLayout from '../layouts/client.layout'
 import Dashboard from '../components/Dashboard'
 
 export default function Index() {
-  return <Dashboard/>
+  return <Dashboard />
 }
 
 Index.getLayout = function getLayout(page: ReactElement) {

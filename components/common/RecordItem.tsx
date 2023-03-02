@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from '@mui/material'
 
-const RecordItem = ({ buttonText, image, label }: { buttonText: string, image: string; label: string }) => {
+const RecordItem = ({ buttonText, image, label }: { buttonText: string; image: string; label: string }) => {
   return (
     <Box
       height="288px"

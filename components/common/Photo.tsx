@@ -1,13 +1,23 @@
 import { Box, Typography } from '@mui/material'
 
-const Photo = ({image, label, width = "243px", height = "243px"}: {image: string, label: string,width?: string, height?: string}) => {
+const Photo = ({
+  image,
+  label,
+  width = '243px',
+  height = '243px',
+}: {
+  image: string
+  label: string
+  width?: string
+  height?: string
+}) => {
   return (
     <Box
       height={height}
       width={width}
       sx={{
         overflow: 'hidden',
-        position: "relative"
+        position: 'relative',
       }}
     >
       <Box
@@ -21,7 +31,7 @@ const Photo = ({image, label, width = "243px", height = "243px"}: {image: string
           transform: 'scale(1.5)',
         }}
       ></Box>
-      <Box sx={{ bgcolor: 'primary.light', position: "absolute", bottom: 0, left: 0, p: "7px 8px" }}>
+      <Box sx={{ bgcolor: 'primary.light', position: 'absolute', bottom: 0, left: 0, p: '7px 8px' }}>
         <Typography sx={{ color: 'common.white' }}>{label}</Typography>
       </Box>
     </Box>

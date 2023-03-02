@@ -9,12 +9,14 @@ const Hexagon = styled('div')(({ theme }) => ({
   transform: 'rotate(270deg)',
 }))
 
-const ChoiceItem = ({icon, label}: {icon: string, label: string}) => {
+const ChoiceItem = ({ icon, label }: { icon: string; label: string }) => {
   return (
     <Hexagon style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <Box display="flex" flexDirection="column" alignItems={'center'} style={{ transform: 'rotate(90deg)' }}>
-        <img src={icon} alt="menu-icon" width="56px" height="56px"/>
-        <Typography sx={{ color: 'common.white' }} fontSize="20px">{label}</Typography>
+        <img src={icon} alt="menu-icon" width="56px" height="56px" />
+        <Typography sx={{ color: 'common.white' }} fontSize="20px">
+          {label}
+        </Typography>
       </Box>
     </Hexagon>
   )

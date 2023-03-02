@@ -1,7 +1,5 @@
 import * as React from 'react'
 import Box from '@mui/material/Box'
-
-import Typography from '@mui/material/Typography'
 import { Button, Container } from '@mui/material'
 
 const pages = [
@@ -13,12 +11,7 @@ const pages = [
   { text: 'お問い合わせ' },
 ]
 
-interface FooterProps {
-  title: string
-  description: string
-}
-
-export default function Footer(props: FooterProps) {
+export default function Footer() {
   return (
     <Box component="footer" sx={{ bgcolor: '#414141', py: 3, px: 2, mt: 'auto' }}>
       <Container>

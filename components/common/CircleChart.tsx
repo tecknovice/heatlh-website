@@ -33,7 +33,7 @@ const CircleChart = ({ percentage }: { percentage: number }) => {
   return (
     <Wrapper>
       <div className="countdown-number">
-        <Typography component="span" fontSize="4px" mr={"1px"}>
+        <Typography component="span" fontSize="4px" mr={'1px'}>
           05/21
         </Typography>
         <Typography component="span" fontSize="6px">

@@ -3,7 +3,7 @@ import ClientLayout from '../layouts/client.layout'
 import Column from '../components/Column'
 
 export default function ColumnPage() {
-  return <Column/>
+  return <Column />
 }
 
 ColumnPage.getLayout = function getLayout(page: ReactElement) {

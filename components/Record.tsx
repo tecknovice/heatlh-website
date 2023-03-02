@@ -35,7 +35,7 @@ const ChartData: { [key: string]: LineChartData } = {
       },
       {
         label: 'Dataset 2',
-        data: [86, 114, 282, 350, 411, 502, 635, 809, 947, 140, 370, 526],
+        data: [86, 114, 282, 350, 411, 502, 635, 809, 47, 140, 370, 526],
         borderColor: 'rgba(143, 233, 208, 1)',
         backgroundColor: 'rgba(143, 233, 208, 1)',
       },
@@ -46,13 +46,13 @@ const ChartData: { [key: string]: LineChartData } = {
     userData: [
       {
         label: 'Dataset 1',
-        data: [86, 114, 111, 133, 221, 783, 2478, 107, 111, 106, 106, 107],
+        data: [86, 114, 111, 133, 221, 783, 478, 107, 111, 106, 106, 107],
         borderColor: 'rgba(255, 204, 33, 1)',
         backgroundColor: 'rgba(255, 204, 33, 1)',
       },
       {
         label: 'Dataset 2',
-        data: [502, 635, 809, 86, 114, 282, 350, 411, 947, 140, 370, 526],
+        data: [502, 35, 209, 86, 114, 282, 350, 411, 47, 140, 370, 526],
         borderColor: 'rgba(143, 233, 208, 1)',
         backgroundColor: 'rgba(143, 233, 208, 1)',
       },
@@ -63,13 +63,13 @@ const ChartData: { [key: string]: LineChartData } = {
     userData: [
       {
         label: 'Dataset 1',
-        data: [106, 106, 107, 111, 86, 114, 133, 221, 783, 247, 107, 111],
+        data: [106, 106, 107, 111, 86, 114, 133, 221, 83, 247, 107, 111],
         borderColor: 'rgba(255, 204, 33, 1)',
         backgroundColor: 'rgba(255, 204, 33, 1)',
       },
       {
         label: 'Dataset 2',
-        data: [350, 411, 502, 635, 809, 86, 114, 282, 947, 140, 370, 526],
+        data: [350, 411, 102, 35, 309, 86, 114, 282, 47, 140, 370, 526],
         borderColor: 'rgba(143, 233, 208, 1)',
         backgroundColor: 'rgba(143, 233, 208, 1)',
       },

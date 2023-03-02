@@ -19,18 +19,10 @@ const pages = [
 const settings = ['自分の記録', '体重グラフ', '目標', '選択中のコース', 'コラム一覧', '設定']
 
 function Header() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null)
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget)
-  }
   const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElUser(event.currentTarget)
-  }
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null)
   }
 
   const handleCloseUserMenu = () => {
@@ -48,7 +40,6 @@ function Header() {
               <Button
                 key={index}
                 disableRipple
-                onClick={handleCloseNavMenu}
                 startIcon={page.icon}
                 sx={{ my: 2, color: 'white', '&:hover': { color: 'primary.main' } }}
               >

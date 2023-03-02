@@ -33,19 +33,20 @@ export const options = {
 }
 
 export interface IDataType {
-  label: string;
-    data: number[];
-    borderColor: string;
-    backgroundColor: string;
+  label: string
+  data: number[]
+  borderColor: string
+  backgroundColor: string
 }
 
-export interface LineChartData {label: string[], userData: IDataType[]}
-export function LineChart(
-  {label, userData}: LineChartData 
-) {
+export interface LineChartData {
+  label: string[]
+  userData: IDataType[]
+}
+export function LineChart({ label, userData }: LineChartData) {
   const data = {
     labels: label,
-    datasets: userData
+    datasets: userData,
   }
   return <Line options={options} data={data} />
 }
