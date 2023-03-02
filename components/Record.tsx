@@ -1,7 +1,8 @@
 import { Button, Divider, Typography } from '@mui/material'
+import Head from 'next/head'
 import { Box } from '@mui/system'
 import { useState } from 'react'
-import { Container } from '../lib/styles/Container'
+import { Container } from './common/Container'
 import { LineChart, LineChartData } from './common/LineChart'
 import RecordItem from './common/RecordItem'
 
@@ -97,6 +98,9 @@ const Record = () => {
   const [chartType, setChartType] = useState('月')
   return (
     <>
+     <Head>
+        <title>My Record</title>
+      </Head>
       <Container
         sx={{
           position: 'relative',
@@ -198,7 +202,7 @@ const Record = () => {
         </Typography>
         <Box display="flex" sx={{ gap: '12px', flexWrap: 'wrap' }}>
           {new Array(8).fill(1).map((_, index) => (
-            <Box key={index} width="24.2%" p={'16px'} sx={{ border: '2px solid #707070', height: '231px' }}>
+            <Box key={index} width="24%" p={'16px'} sx={{ border: '2px solid #707070', height: '231px' }}>
               <Box>
                 <Box>
                   <Typography color="common.black" fontSize="18px" lineHeight={'22px'}>

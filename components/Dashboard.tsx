@@ -1,5 +1,6 @@
-import { Box, Button, CircularProgress } from '@mui/material'
-import { Container } from '../lib/styles/Container'
+import { Box, Button } from '@mui/material'
+import Head from 'next/head'
+import { Container } from './common/Container'
 import ChoiceItem from './common/ChoiceItem'
 import CircleChart from './common/CircleChart'
 import { LineChart } from './common/LineChart'
@@ -79,6 +80,9 @@ const ChartData = {
 const Dashboard = () => {
   return (
     <>
+      <Head>
+        <title>Top page</title>
+      </Head>
       <Box display="flex">
         <Box
           height="316px"
@@ -124,7 +128,7 @@ const Dashboard = () => {
         }}
       >
         {PhotoList.map((m, index) => (
-          <Photo key={index} image={m.image} label={m.label} />
+          <Photo key={index} image={m.image} label={m.label} width={"24%"} />
         ))}
       </Container>
       <Container sx={{ display: 'flex', justifyContent: 'center', mb: '64px' }}>

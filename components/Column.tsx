@@ -1,5 +1,6 @@
 import { Box, Button, Divider, Typography } from '@mui/material'
-import { Container } from '../lib/styles/Container'
+import Head from 'next/head'
+import { Container } from './common/Container'
 import Photo from './common/Photo'
 
 const PhotoList = [
@@ -58,6 +59,9 @@ const HeadList = [
 const Column = () => {
   return (
     <>
+      <Head>
+        <title>Column</title>
+      </Head>
       <Container
         sx={{
           display: 'flex',

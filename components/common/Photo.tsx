@@ -4,7 +4,7 @@ const Photo = ({
   image,
   label,
   width = '243px',
-  height = '243px',
+  height = '200px',
 }: {
   image: string
   label: string
