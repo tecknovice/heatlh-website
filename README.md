@@ -17,5 +17,8 @@
 yarn install
 yarn dev
 ```
+## Page Urls
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Top page:  [http://localhost:3000](http://localhost:3000)
+- My record:  [http://localhost:3000/record](http://localhost:3000/record)
+- Column:  [http://localhost:3000/column](http://localhost:3000/column)
